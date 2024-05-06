@@ -1,15 +1,14 @@
-import React from 'react'
-// import styled from 'styled-components'
+import styled from 'styled-components'
 import Wrapper from '../assets/wrappers/LandingPage'
 import main from '../assets/images/main.svg'
-import logo from '../assets/images/logo.svg'
 import { Link } from 'react-router-dom'
+import { Logo } from '../components'
 
 const Landing = () => {
   return (
     <Wrapper>
       <nav>
-        <img src={logo} alt='jobify' className='logo' />
+        <Logo />
       </nav>
       <div className='container page'>
         <div className='info'>
@@ -17,15 +16,15 @@ const Landing = () => {
             job <span>tracking</span> app
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            quasi pariatur cupiditate possimus a ipsam recusandae neque, omnis
-            necessitatibus sapiente dolor itaque, debitis molestiae culpa fuga
-            nisi quae, cumque harum?
+            I'm baby wayfarers hoodie next level taiyaki brooklyn cliche blue
+            bottle single-origin coffee chia. Aesthetic post-ironic venmo,
+            quinoa lo-fi tote bag adaptogen everyday carry meggings +1 brunch
+            narwhal.
           </p>
           <Link to='/register' className='btn register-link'>
             Register
           </Link>
-          <Link to='/login' className='btn'>
+          <Link to='/login' className='btn '>
             Login / Demo User
           </Link>
         </div>

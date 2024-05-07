@@ -7,13 +7,17 @@ import links from '../utils/links'
 import { NavLink } from 'react-router-dom'
 
 const SmallSidebar = () => {
-  const data = useDashBoardContext()
+  const { showSidebar, toggleSidebar } = useDashBoardContext()
   // console.log(data)
   return (
     <Wrapper>
-      <div className='sidebar-container show-sidebar'>
+      <div
+        className={
+          showSidebar ? 'sidebar-container show-sidebar' : 'sidebar-container'
+        }
+      >
         <div className='content'>
-          <button className='close-btn'>
+          <button type='button' className='close-btn' onClick={toggleSidebar}>
             <FaTimes />
           </button>
           <header>
@@ -28,7 +32,8 @@ const SmallSidebar = () => {
                   to={path}
                   key={text}
                   className='nav-link'
-                  onClick={() => {}}
+                  onClick={toggleSidebar}
+                  end
                 >
                   <span className='icon'>{icon}</span>
                   {text}

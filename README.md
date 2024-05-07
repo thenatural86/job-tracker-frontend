@@ -1006,17 +1006,15 @@ npm install react-icons@4.8.0
 Navbar.jsx
 
 ```jsx
-
-import {FaHome} from 'react-icons/fa'
+import { FaHome } from 'react-icons/fa'
 const Navbar = () => {
   return (
     <div>
       <h2>navbar</h2>
-      <FaHome>
+      <FaHome />
     </div>
   )
 }
-
 ```
 
 #### Navbar - Initial Setup
